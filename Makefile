@@ -1,6 +1,6 @@
 TARGET=lorem_ipsum.adoc
 OUTPUT=lorem_ipsum.html
-THEME=screen
+THEME=fiole
 
 all: html
 

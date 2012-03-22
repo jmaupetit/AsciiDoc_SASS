@@ -5,14 +5,17 @@
    Inlined to avoid required HTTP connection: h5bp.com/r
    ========================================================================== */
 
+@import "blueprint/print";
+
 @media print {
     * {
-    background: transparent !important;
-    color: black !important;
-    box-shadow: none !important;
-    text-shadow: none !important;
-    filter: none !important;
-    -ms-filter: none !important; }
+      @include blueprint-print-body;
+      background: transparent !important;
+      color: black !important;
+      box-shadow: none !important;
+      text-shadow: none !important;
+      filter: none !important;
+      -ms-filter: none !important; }
   /* Black prints faster: h5bp.com/s */
   abbr[title]:after {
       content: " (" attr(title) ")"; }
@@ -45,7 +48,7 @@
   @page {
       // A4 document
       size:A4 portrait;
-      margin: 2cm; 
+//      margin: 2cm; 
       
       @top-right { content: "test" }
   }

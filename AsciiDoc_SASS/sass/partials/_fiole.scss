@@ -22,8 +22,6 @@ body {
   color: #3E4349;
   line-height: 1.3em;
   &.article { 
-      @include container; 
-      overflow:auto; 
       text-align:justify } }
 
 h1, h2, h3, h4, h5, h6, div.title, caption.title, thead, p.table.header, #toctitle, #author, #revnumber, #revdate, #revremark, #footer {
